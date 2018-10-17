@@ -16,6 +16,7 @@ build:
     pull: true
     
   ci:
+         - java --version
          - echo "(print *clojure-version*)" > clojure.main  
          - clj clojure.main
          #- java -jar /root/lib/clojure-1.8.0.jar clojure.main
