@@ -7,11 +7,11 @@ lein:
 build:
   pre_ci_boot:
     image_name: drydock/u14cloall
-    image_tag: v6.9.4
+    image_tag: master
     pull: true
     
   ci:
-         - shippable_jdk set oraclejdk10
+         - shippable_jdk set oraclejdk11
          - echo "(print *clojure-version*)" > clojure.main  
          - clj clojure.main
          #- java -jar /root/lib/clojure-1.8.0.jar clojure.main
